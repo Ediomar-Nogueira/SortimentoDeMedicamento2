@@ -79,7 +79,6 @@ public class FragmentoCadastroMedicamento extends Fragment{
     }
 
     private Medicamento getMedicamento(){
-         medicamento = new Medicamento();
 
         medicamento.setNomeMedicamento(nomeMedicamento.getText().toString());
         medicamento.setDescricaoMedicamento(descricaoMedicamento.getText().toString());
