@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicamento"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeMedicamento"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignRight="@+id/descricaoMedicamento"
+        android:layout_alignEnd="@+id/descricaoMedicamento" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Medicamento"
+        android:id="@+id/textView7"
+        android:textColor="#000000"
+        android:layout_below="@+id/nomeMedicamento"
+        android:layout_alignLeft="@+id/descricaoMedicamento"
+        android:layout_alignStart="@+id/descricaoMedicamento" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descricaoMedicamento"
+        android:inputType="textCapWords|textCapSentences|textAutoComplete|textAutoCorrect|none|text|textCapCharacters"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_toStartOf="@+id/textView13"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soma no Estoque"
+        android:id="@+id/textView8"
+        android:textColor="#000000"
+        android:layout_below="@+id/descricaoMedicamento"
+        android:layout_alignLeft="@+id/somaEstoque"
+        android:layout_alignStart="@+id/somaEstoque" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/somaEstoque"
+        android:inputType="number"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dosagemDiaria"
+        android:inputType="number"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/somaEstoque"
+        android:layout_alignEnd="@+id/somaEstoque"
+        android:layout_alignLeft="@+id/somaEstoque"
+        android:layout_alignStart="@+id/somaEstoque" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Farmácia"
+        android:id="@+id/textView10"
+        android:textColor="#000000"
+        android:layout_below="@+id/dosagemDiaria"
+        android:layout_alignLeft="@+id/nomeFarmacia"
+        android:layout_alignStart="@+id/nomeFarmacia" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeFarmacia"
+        android:inputType="textCapWords|textCapSentences|textAutoComplete|textAutoCorrect|none|text|textCapCharacters"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toLeftOf="@+id/quantidadeAtual"
+        android:layout_toStartOf="@+id/quantidadeAtual" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone de Contato"
+        android:id="@+id/textView11"
+        android:textColor="#000000"
+        android:layout_below="@+id/nomeFarmacia"
+        android:layout_alignLeft="@+id/nomeFarmacia"
+        android:layout_alignStart="@+id/nomeFarmacia" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefoneFarmacia"
+        android:inputType="phone|none"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/nomeFarmacia"
+        android:layout_alignStart="@+id/nomeFarmacia"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade Atual"
+        android:id="@+id/textView13"
+        android:textColor="#000000"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravar"
+        android:id="@+id/btnGravar"
+        android:layout_alignBottom="@+id/telefoneFarmacia"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/quantidadeAtual"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosagem Diaria"
+        android:id="@+id/textView12"
+        android:textColor="#000000"
+        android:layout_below="@+id/somaEstoque"
+        android:layout_alignLeft="@+id/dosagemDiaria"
+        android:layout_alignStart="@+id/dosagemDiaria" />
+
+</RelativeLayout>
